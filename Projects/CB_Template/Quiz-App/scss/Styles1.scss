@@ -1,0 +1,17 @@
+// sass --watch scss/styles1.scss css/style1.css
+@use "borders";
+@use "icons" ;
+@use "utilities1";
+@use "quiz_class_list";
+.main1_bg{
+  background-color: #FFC000;
+}
+
+.q_type{
+  div{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
+
+// height: 100%;

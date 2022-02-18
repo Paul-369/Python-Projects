@@ -1,0 +1,60 @@
+*{
+    font-size: 0.9rem;
+}
+
+.container-fluid.header{
+    background-color: #eaf5ff;
+    border-radius: 0 0 40% 40% / 0 0 15% 15%;
+    padding-bottom: 15rem;
+}
+
+.container-fluid.footer{
+    background-color: #eaf5ff;
+    border-radius: 40% 40% 0 0/15% 15% 0 0 ;
+    padding-top: 5rem;
+}
+
+.settings{
+    z-index: 1;
+    right: 0;
+    top: 25%;
+    border-radius: 20% 0 0 20%;
+}
+
+.call-to-action{
+    right: -15%;
+}
+
+.contact, .service-2 .badge{
+    color: #fc5657;
+    background-color: #ece2eb;
+}
+
+.service-1 .badge{
+    color: #577ffa;
+    background-color: #e3e9ff;
+}
+
+.service-card-1{
+    border-top: 4px solid #577ffa;
+}
+
+.service-card-2{
+    border-top: 4px solid #fc5657;
+}
+
+.service-container{
+    top: -100px;
+    right: 0;
+    left: 0;
+}
+
+.pricing-table .card-body{
+    transition: 0.3s ease-in all;
+}
+
+.pricing-table .card-body:hover{
+    transform: scale(1.1);
+    border-top: 4px solid #577ffa;
+    box-shadow: 1px 1px 7px;
+}

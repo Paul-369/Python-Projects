@@ -1,0 +1,294 @@
+@media screen and (max-width: 480px) {
+  .container__main1 {
+    width: 100%;
+    padding: 1px 2px 2px 1px;
+  }
+
+  .container__main {
+    width: 100%;
+    padding: 0px 2px 2px 5px;
+  }
+
+  .instructions {
+    padding: 2px;
+  }
+
+  .user_wr input::placeholder {
+    font-size: medium;
+  }
+
+  .qa .title span {
+    padding: 0 5px;
+    border-radius: 8px;
+    margin-right: 4px;
+  }
+}
+.circle {
+  width: 300px;
+  height: 300px;
+  clip-path: circle(50%);
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.spinner-left {
+  position: absolute;
+  background-color: #FFFF9B;
+  width: 50%;
+  height: 100%;
+  transform-origin: right center;
+}
+
+.spinner-left-join {
+  position: absolute;
+  background-color: #FFFF9B;
+  width: 50%;
+  height: 100%;
+  transform-origin: right center;
+}
+
+.spinner-left-static {
+  position: absolute;
+  z-index: 3;
+  background-color: white;
+  width: 50%;
+  height: 150%;
+}
+
+.counts {
+  width: 300px;
+  height: 300px;
+  clip-path: circle(30%);
+  /* background-color: darkkhaki; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 50;
+  font-size: 50px;
+  color: #020000;
+}
+
+.outer-circle {
+  width: 290px;
+  height: 290px;
+  position: absolute;
+  /* opacity: 30%; */
+  /* background-color: rgba(44, 34, 34, 0); */
+  /* border: black 30px solid; */
+  border-radius: 99999px;
+  z-index: 30;
+  /* clip-path: circle(50%); */
+}
+
+.container-cwndwn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.blur-page {
+  background-color: white;
+  filter: blur(5px);
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tool-tip {
+  position: absolute;
+  top: -36px;
+  left: 0;
+  visibility: hidden;
+  padding: 6px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.second-dot {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.main__countdown-plate {
+  margin: 10% 0;
+}
+
+.cert_container {
+  width: fit-content;
+  height: 100%;
+  margin: 0 auto;
+  border: 2px Solid black;
+  padding: 15px;
+  border-radius: 7px;
+  font-weight: bold;
+  background-color: #e6c300;
+}
+.cert_container .dnld_btns {
+  display: flex;
+  justify-content: space-between;
+}
+.cert_container .dnld_btns button {
+  background-color: black;
+  border: white 2px solid;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 6px;
+}
+.cert_container .close {
+  float: right;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 0 4px;
+  cursor: pointer;
+}
+.cert_container canvas {
+  margin: 10px auto;
+  width: 100%;
+}
+
+.get_cert {
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.alert_sq {
+  margin-top: 7px;
+}
+
+.sticky_rela {
+  position: sticky;
+  z-index: 4;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #FFC000;
+  top: 0;
+}
+
+.submitted {
+  position: fixed;
+  z-index: 50;
+  background-color: #dfdfdf;
+  width: 70%;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  top: 35%;
+  left: 17%;
+  justify-content: center;
+  align-items: center;
+}
+
+.obo-alert {
+  color: red;
+  display: block;
+  position: fixed;
+  z-index: 80;
+  background-color: #dfdfdf;
+  width: 70%;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  top: 140%;
+  left: 17%;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.q-all-alert {
+  color: red;
+  display: block;
+  position: fixed;
+  z-index: 20;
+  background-color: white;
+  width: 70%;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  top: 140%;
+  left: 17%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+  background-color: black;
+  z-index: 2;
+  opacity: 50%;
+}
+
+.modal_bg1 {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+  background-color: black;
+  z-index: 0;
+  opacity: 0%;
+}
+
+.modal-bg-close {
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+}
+
+.ava_icon {
+  background-color: #d5d3d3;
+  height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: 11px 15px;
+}
+
+.clock_icon_bg {
+  background-color: #d5d3d3;
+  height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: 11px 13px;
+}
+
+.ad_s {
+  width: 100%;
+}
+
+.tooltip {
+  position: absolute;
+  top: -10px;
+  left: 14%;
+  visibility: hidden;
+  padding: 6px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.tooltip-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*# sourceMappingURL=style2.css.map */

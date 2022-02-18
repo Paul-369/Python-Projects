@@ -1,0 +1,14 @@
+.timer_txt{
+  input{
+    width: 40px;
+    font-weight: bold;
+    border: 0;
+    border-color: transparent;
+    outline: none;
+    // border-bottom: black 1px solid;
+  }
+  input::placeholder{
+    font-weight: bold;
+    color: black;
+  }
+}

@@ -1,0 +1,23 @@
+// class lists for question one by one.
+// lander height
+.o_b_o{
+  height: fit-content;
+}
+
+// wrong ans indicator
+.red_wr{
+  background-color:#FF8C76;
+}
+
+
+// hide arrows
+/* Chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

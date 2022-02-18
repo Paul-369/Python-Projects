@@ -1,0 +1,144 @@
+.container__main1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: max-content;
+  margin: 0 auto;
+  border: 2px Solid black;
+  padding: 9px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+.h2 {
+  text-align: center;
+  h2 {
+    padding: 10px;
+  }
+}
+.timer_ques {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 90px;
+  }
+  .get_cert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 140px;
+  }
+  .q_qty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    padding: 3px 5px;
+    // p{
+    //   margin-left: 5px;
+    // }
+  }
+}
+
+.qa {
+  background-color: white;
+  margin-top: 9px;
+
+  .title {
+    padding: 3px;
+    margin: 5px;
+
+    .eqnbox {
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+    span {
+      padding: 0 5px;
+      border-radius: 8px;
+      margin-right: 4px;
+    }
+  }
+  .opta {
+    margin: 5px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    cursor: pointer;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    input {
+      margin: 10px;
+    }
+  }
+  .optb {
+    margin: 5px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    cursor: pointer;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    input {
+      margin: 10px;
+    }
+  }
+  .optc {
+    margin: 5px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    cursor: pointer;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    input {
+      margin: 10px;
+    }
+  }
+  .optd {
+    margin: 5px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    cursor: pointer;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    input {
+      margin: 10px;
+    }
+  }
+}
+
+.sel_que {
+  height: 35px;
+  .q_next {
+    margin-right: 5px;
+    float: right;
+  }
+  .q_prev {
+    margin-left: 5px;
+    float: left;
+  }
+
+  button {
+    height: 35px;
+    width: 90px;
+  }
+}
+.sign_wr {
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  .sign_k {
+    padding: 0 5px;
+  }
+}

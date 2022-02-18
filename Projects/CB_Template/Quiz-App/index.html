@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>..Quiz--App..</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style2.css">
+  
+</head>
+<body oncontextmenu="return true">
+<main class="container__main">
+    <div class="" id="timer_backdrop"></div>
+    <!-- instructions -->
+    <section class="instructions">
+      <h2>Instructions:</h2>
+      <ul>
+        <li>This test contains 22 questions and there is no 
+          time limit.</li>
+        <li>If you want time Limit for the Quiz You can set 
+          by clicking timer.</li>
+        <li>If you want to see all questions at a time, Select
+          show all questions at a time Option in Question 
+          Type.</li>
+        <li>If you want to see questions one by one, Select
+          show Questions one by one Option in Question 
+          Type.</li>
+        <li>Select any one of the correct answers from the 
+          given options.</li>
+        <li>You will get points on the basis of your correct 
+          answer.</li>
+        <li>You can review all the answers at the end of this 
+          quiz.</li>
+        <li>The Name you enter below will appear on your 
+          certificate.</li>
+        <li>To start, click the "Start Quiz" button. 
+          When finished, click the "Submit" button.</li>
+        <!-- <li> <a href="http://">Click here</a>  to Play Demo Video.</li> -->
+      </ul>
+    </section>
+    <!-- Quiz Preferences -->
+    <section class="q_preference">
+      <!-- timer pop-up -->
+        <div class="time_set_wr border_2px" style="display: none;">
+          <span class="modal-bg-close" style="cursor: pointer;">&times;</span>
+          <p>Set Timer</p>
+          <div class="time_btn_wr border_2px" >
+            <div class="timer_txt">
+              <!-- <input list="li-for-03" id="h" type="number" maxlength="2" placeholder="HH" >:<input id="m" list="li-for-59" maxlength="2" max="59" type="number" placeholder="MM" >:<input id="s" max="59" maxlength="2" type="number" placeholder="SS"  list="li-for-59" > -->
+              <select  id="h">
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+              </select>H:
+              <select id="m"><option value="00">00</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option></select>M:
+              <select id="s"></select>:S
+            </div>
+            <div class="step_btn" style="display: none;">
+              <span class="u_btn" ><svg  id="up_clk" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path id="Polygon_1" data-name="Polygon 1" d="M5,0l5,10H0Z"/>
+              </svg>
+              </span>
+              <span class="d_btn" ><svg id="d_clk" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path id="Polygon_2" data-name="Polygon 2" d="M5,0l5,10H0Z" transform="translate(10 10) rotate(180)"/>
+              </svg>
+              </span>
+            </div>
+          </div>
+          <p class="alert_enter_time" style="color: red; font-size:12px;"></p>
+          <button class="set_time">Set Time Limit</button>
+        </div>
+      <div class="test_part border_2px">
+        <p></p>
+      </div>
+      <div class="tooltip-container">
+        <span class="tooltip">Enter only{space,dot,Alphabets}.</span>
+      </div>
+      <div class="user_wr border_2px" >
+        <div class="ava_icon">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 55.464 59.93">
+              <g id="Group_2" data-name="Group 2" transform="translate(-924.077 -419)">
+                <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(937 419)" stroke="#707070" stroke-width="1">
+                  <circle cx="15" cy="15" r="15" stroke="none"/>
+                  <circle cx="15" cy="15" r="14.5" fill="none"/>
+                </g>
+                <path id="Path_1" data-name="Path 1" d="M767.589,486.43H822.03s.338-14.343-4.734-18.947-12.612-5.374-21.4-6.031-19.174,1.756-23.57,6.031S767.589,486.43,767.589,486.43Z" transform="translate(157 -8)" stroke="#707070" stroke-width="1"/>
+              </g>
+            </svg>
+
+          
+        </div>
+          <input list="user_name" maxlength="20" class="str-name" type="text" placeholder="Enter Your Name" >
+          <script>
+            const tooltip=document.querySelector(".tooltip")
+            let str=''
+            const user_input=document.querySelector(".str-name")
+              user_input.addEventListener("input",()=>{
+                let inarr=user_input.value.split("")
+              if(/[a-zA-Z. ]/i.test(inarr[inarr.length-1])){
+                str=user_input.value
+              }else{
+                tooltip.style.visibility='visible'
+                setTimeout(()=>{
+                  tooltip.style.visibility='hidden'
+                },3000)
+                user_input.value=str
+              }
+              })
+          </script>
+          <datalist id="user_name">
+            <option id="cr7" value=""></option>
+          </datalist>
+      </div>
+      <div class="timer_wr border_2px" >
+          <div class="clock_icon">
+            <div class="clock_icon_bg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64.318 60.951">
+                <g id="Group_1" data-name="Group 1" transform="translate(-761.841 -560.545)">
+                  <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(772 572)" fill="none" stroke="#000" stroke-width="4">
+                    <circle cx="23" cy="23" r="23" stroke="none"/>
+                    <circle cx="23" cy="23" r="21" fill="none"/>
+                  </g>
+                  <line id="Line_1" data-name="Line 1" y2="13" transform="translate(795.5 583.5)" fill="none" stroke="#000" stroke-width="3"/>
+                  <line id="Line_2" data-name="Line 2" y2="13" transform="translate(796 595) rotate(90)" fill="none" stroke="#000" stroke-width="3"/>
+                  <path id="Path_2" data-name="Path 2" d="M0,0V13" transform="translate(802 567) rotate(90)" fill="none" stroke="#000" stroke-width="3"/>
+                  <line id="Line_4" data-name="Line 4" y2="7" transform="translate(795.5 566.5)" fill="none" stroke="#000" stroke-width="3"/>
+                  <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(761.841 576.635) rotate(-47)" stroke="#000" stroke-width="1">
+                    <rect width="22" height="10" rx="4" stroke="none"/>
+                    <rect x="0.5" y="0.5" width="21" height="9" rx="3.5" fill="none"/>
+                  </g>
+                  <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(811.155 560.545) rotate(47)" stroke="#000" stroke-width="1">
+                    <rect width="22" height="10" rx="3" stroke="none"/>
+                    <rect x="0.5" y="0.5" width="21" height="9" rx="2.5" fill="none"/>
+                  </g>
+                  <line id="Line_5" data-name="Line 5" x2="8" y2="9" transform="translate(807.5 611.5)" fill="none" stroke="#000" stroke-width="3"/>
+                  <line id="Line_6" data-name="Line 6" x1="7" y2="9" transform="translate(776.5 611.5)" fill="none" stroke="#000" stroke-width="3"/>
+                </g>
+              </svg> 
+            </div>
+            <p>Timer (Optional)</p>
+          </div>
+        <div class="switch_wr ">
+          <div class="switch s_off">
+            <p id="p_on" style="display:none">on</p>
+            <p id="p_off">off</p>
+            <div class="btn_switch" ></div>
+          </div>
+        </div>
+      </div>
+      <div class="q_type border_2px">
+        <div><p>Question Type</p></div>
+        <div class="select_q">
+          <div>
+            <input id="obo" class="obo" type="radio" name="option" >
+            <span><label for="obo">Show Questions one by one</label></span>
+          </div>
+          
+          <div>
+            <input id="q_all" class="q_all"type="radio" name="option" >
+            <span><label for="q_all"> Show all Questions at a Time</label></span>
+          </div>
+        </div>
+      </div>
+      <center><p class="alert_sq" style="color: red;"></p></center>
+      <center><button class="submit_q" onclick="MathJax.typeset();">Start Quiz</button></center>
+    </section>
+  </main>
+  <main class="container__main1  main1_bg" style="display: none;">
+    <div class="" id="modal_bg1"></div>
+    <div id="sticky_rela" class="sticky_rela">
+      <div class="h2 border_2px_wht">
+        <h2 ></h2>
+        </div>
+        
+        <div class="timer_ques ">
+          <div class="timer border_2px_wht_b">
+          <span class="hh">00</span>:<span class="mm">00</span>:<span class="ss">00</span>
+          </div>
+          <div class="get_cert border_2px_wht_b" style="display: none;">
+          <p>Get Certificate</p>
+          </div>
+          <div class="q_qty border_2px_wht_b">
+          <p>Ques:<span>25</span></p>
+          </div>
+        </div>
+        <div id="warn-alerts" class="" style="position: absolute;"></div>
+    </div>
+    <!-- lander -->
+    </div>
+    <div class="lander">
+    </div>
+    <div class="" id="submitted" style="display: none;">
+      <!-- <h2 style="color:red">*Submitted*</h2> -->
+      <p style="color:red">Only 30 seconds left after 30 seconds completed quiz will be auto submit </p>
+    </div>
+  </main>
+  <img id="cert-img" src="../assets/certificate.jpg" style="display: none;" />
+  <!-- countdown plate -->
+  <main class="main__countdown-plate" style="display: none;">
+    <div class="container-cwndwn">
+      <div class="outer-circle"></div>
+      <div class="circle">
+        <div class="spinner-left-static"></div>
+        <div class="spinner-left"></div>
+        <div class="spinner-left-join"></div>
+        <div class="counts"><h1 ></h1></div>
+      </div>
+    </div>
+    <div class="txt-loader">
+      <h2 class="second-dot"></h2>
+    </div>
+  </main>
+  <!-- certificate -->
+  <main class="cert_container" style="display: none;">
+    <div class="cert-wr">
+      <!-- google ads  -->
+      <div class="ad_s">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-634356383828"
+     crossorigin="anonymous"></script>
+<!-- Testing -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-637277288"
+     data-ad-slot="6053253014"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+      </div>
+      <div class="top-sp"> 
+        <span class="close">Close X</span>
+      </div>
+      <div>
+        <canvas id="certificate-canva"></canvas>
+      </div>
+      <div class="dnld_btns">
+        <button  id="img-dnld"  >Download IMG</button>
+        <button  id="pdf-dnld" >Download PDF</button>
+      </div>
+      <!-- google ads  -->
+      <div class="ad_s">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-634356383828"
+     crossorigin="anonymous"></script>
+<!-- Testing -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-637277288"
+     data-ad-slot="6053253014"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+      </div>
+    </div>
+    
+  </main>
+</body>
+<script>
+  // username 
+  const strName=document.querySelector(".str-name")
+  const strLocal=document.querySelector("#cr7")
+  const subClick=document.querySelector(".submit_q")
+  if(window.localStorage.getItem("name")!=null){
+    strLocal.value=window.localStorage.getItem("name")
+  }
+  subClick.addEventListener("click",()=>{
+    window.localStorage.setItem("name", strName.value);
+    strLocal.value=window.localStorage.getItem("name")
+  })
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script>
+      MathJax = {
+          chtml: { displayAlign: 'left' }
+      };
+  </script>
+  <script src="js/qtnnav.js"></script>
+  <script type="module" src="js/quiz.js"></script>
+  <script type="module" src="js/ans_crctn.js"></script>
+  <script type="module" src="js/submit.js"></script>
+  <script type="module" src="js/timer.js"></script>
+  <script type="module" src="js/certificate.js"></script>
+  
+  
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quize</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+
+    <style>        
+        .hide-element:not(.show-element){
+            display: none;
+        }
+
+        .show-element{
+            display: block;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h2 class="text-center">Title</h2>
+        <div class="card quize-container">
+            <div class="card-header">
+
+                <div class="row align-items-center" id="quize-meta">
+
+                    <div class="col-3 h5 mb-0" >
+                        <span class="badge badge-primary badge-pill p-2 p-md-3 d-none" id="current-qstn">0</span>
+                    </div>
+
+                    <div class="col-6" >
+                        <div class="timer-container text-center h5 mb-0">
+                            <div class="badge border border-secondary bg-white p-2" id="timer">00 : 00 : 00</div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 text-right h5 mb-0" >
+                        <span class="badge badge-primary badge-pill p-2 p-md-3 d-none" id="total-qstn"></span>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="card-body py-0" id="quize">
+                <div class="start-btn my-3">
+                    <button class="btn btn-block w-50 m-auto btn-success p-2" id="timer-btn">Start Quize</button>
+                </div>
+
+                <div class="alert alert-warning text-center d-none" id="warnAlert">
+                    <span>Please select answer !</span>
+                </div>
+                <div id="slide-container"></div>
+            </div>
+        </div>
+
+        <div class="controls p-3 clearfix">
+            <button class="btn btn-primary hide-element float-left" id="prev-btn">Prev</button>
+            <button class="btn btn-primary hide-element float-right" id="next-btn">Next</button>
+            <button class="btn btn-success hide-element float-right" id="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <!-- JQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./index.js"></script>
+</body>
+</html>

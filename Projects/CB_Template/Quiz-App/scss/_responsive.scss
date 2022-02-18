@@ -1,0 +1,31 @@
+@media screen and (max-width: 480px) {
+  // width
+  .container__main1{
+    width: 100%; 
+    padding: 1px 2px 2px 1px ;
+  }
+  .container__main{
+    width: 100%;
+    padding: 0px 2px 2px 5px ;
+  }
+  .instructions{
+    padding: 2px ;
+  }
+
+  // user name input 
+  .user_wr{
+    input::placeholder{
+      font-size: medium;
+    }
+  }
+  // qtn num and quetion
+  .qa{
+    .title{
+      span{
+        padding:0 5px;
+        border-radius: 8px;
+        margin-right: 4px;
+      }
+    }
+  }
+}

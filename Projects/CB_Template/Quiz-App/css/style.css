@@ -1,0 +1,372 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container__main {
+  position: relative;
+  width: 99%;
+  min-height: 100vh;
+  margin: 0 auto;
+  border: 2px Solid black;
+  padding: 10px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.q_preference {
+  width: 99%;
+  margin: 0 auto;
+}
+
+.instructions {
+  padding: 10px 25px;
+}
+.instructions ul {
+  list-style: none;
+}
+.instructions ul li {
+  padding: 5px;
+  color: red;
+}
+.instructions ul li:before {
+  list-style: none;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-size: 16px;
+  background-image: url(../icons/red_tick.svg);
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.select_q input[type=radio] {
+  appearance: none;
+  border: 1px solid #d3d3d3;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  content: none;
+  outline: none;
+  margin: 0;
+  border-color: #938F8F;
+  background-color: #AFABAB;
+}
+.select_q input[type=radio]:checked {
+  appearance: none;
+  outline: none;
+  content: none;
+  border: none;
+  border: #4D4A4A px solid;
+  background-color: black;
+}
+.select_q input[type=radio]:checked::before {
+  position: absolute;
+  color: white !important;
+  content: " ✓ " !important;
+  border: 1px solid #d3d3d3;
+  font-size: 17px;
+  border-color: transparent;
+}
+
+.qa input[type=radio] {
+  appearance: none;
+  border: 1px solid #d3d3d3;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  content: none;
+  outline: none;
+  margin: 0;
+  border-color: #938F8F;
+  background-color: #AFABAB;
+}
+.qa input[type=radio]:checked {
+  appearance: none;
+  outline: none;
+  content: none;
+  border: none;
+  border: #4D4A4A px solid;
+  background-color: black;
+}
+.qa input[type=radio]:checked::before {
+  position: absolute;
+  color: white !important;
+  content: " ✓ " !important;
+  border: 1px solid #d3d3d3;
+  font-size: 13px;
+  border-color: transparent;
+}
+
+.border_2px {
+  border: 2px solid black;
+  border-radius: 9px;
+}
+
+.border_2px_b {
+  border: 1.7px solid #02e1ff;
+  border-radius: 9px;
+}
+
+.border_2px_gy {
+  border: 2px solid #6e6e6e;
+  border-radius: 9px;
+}
+
+.border_2px_wht {
+  border: 1.7px solid #FFFFFF;
+  border-radius: 9px;
+  background-color: #C00000;
+  color: #FFFFFF;
+}
+
+.border_2px_wht_b {
+  border: 1.7px solid #FFFFFF;
+  border-radius: 9px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.border_2px_bg_b {
+  border: 1.7px solid #000000;
+  border-radius: 9px;
+  background-color: #007BFF;
+  color: #FFFFFF;
+}
+
+.q_qty {
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.q_qty span {
+  background-color: #FF0000;
+  width: 40px;
+  height: 20px;
+  padding: 3px 9px;
+  border-radius: 9px;
+}
+
+.b_2px_bg_b {
+  border: 2px solid #007BFF;
+  border-radius: 9px;
+  background-color: #007BFF;
+  color: #FFFFFF;
+}
+
+.red_bg_wht {
+  background-color: #FE0000;
+  color: white;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+.switch {
+  display: flex;
+  width: 65px;
+  border-radius: 9999px;
+  height: fit-content;
+  background-color: white;
+  border: 2px solid black;
+}
+.switch input {
+  display: none;
+}
+
+.btn_switch {
+  border-radius: 9999px;
+  width: 31px;
+  height: 31px;
+  background-color: black;
+}
+
+.switch_wr {
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+}
+.switch_wr #p_on {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  right: 49px;
+  top: 34%;
+  font-size: 14px;
+  user-select: none;
+}
+.switch_wr #p_off {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  right: 22px;
+  top: 37%;
+  font-size: 14px;
+  user-select: none;
+}
+
+.submit_q {
+  margin-top: 8px;
+  border: black 2px solid;
+  border-radius: 4px;
+  text-align: center;
+  height: 35px;
+  width: 150px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  background-color: #74e700;
+}
+
+.s_on {
+  justify-content: flex-end;
+}
+
+.s_off {
+  justify-content: flex-start;
+}
+
+.b_on {
+  background-color: black;
+}
+
+.b_off {
+  background-color: white;
+}
+
+#up_clk {
+  cursor: pointer;
+}
+
+#d_clk {
+  cursor: pointer;
+}
+
+.time_set_wr {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 80%;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 10;
+  background-color: #FFFFFF;
+}
+
+.time_btn_wr {
+  margin: 10px auto;
+  height: 44px;
+  width: 200px;
+  border-radius: 4px;
+  border-color: black;
+  padding: 10px 5px;
+}
+
+.timer_txt {
+  font-size: 16px;
+  flex-basis: 150px;
+}
+
+.step_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-right: 4px;
+}
+.step_btn .u_btn {
+  border-color: transparent;
+  font-size: 10px;
+  width: 10px;
+}
+.step_btn .d_btn {
+  border-color: transparent;
+  font-size: 10px;
+  width: 10px;
+}
+
+.set_time {
+  color: white;
+  border: black 2px solid;
+  background-color: #00ff0d;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  height: 35px;
+  width: 178px;
+  margin: 10px 0 5px 0;
+}
+
+.test_part {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.user_wr {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+.user_wr input {
+  width: 70%;
+  margin-left: 10px;
+  border-color: transparent;
+  outline: none;
+  border: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.timer_wr {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.timer_wr .clock_icon {
+  display: flex;
+  align-items: center;
+}
+.timer_wr .clock_icon p {
+  margin-left: 10px;
+}
+
+.q_type {
+  margin-top: 20px;
+  padding: 10px;
+}
+.q_type .select_q {
+  margin-left: 10px;
+}
+.q_type .select_q span {
+  position: relative;
+  top: -6px;
+}
+
+.timer_txt input {
+  width: 40px;
+  font-weight: bold;
+  border: 0;
+  border-color: transparent;
+  outline: none;
+}
+.timer_txt input::placeholder {
+  font-weight: bold;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

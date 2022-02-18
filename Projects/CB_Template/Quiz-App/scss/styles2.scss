@@ -1,0 +1,174 @@
+@use "responsive";
+@use "cntdwn";
+
+// sass --watch scss/styles2.scss css/style2.css
+.cert_container{
+  width: fit-content; 
+  height:100%;
+  margin:0 auto;
+  border: 2px Solid black;
+  padding: 15px;
+  border-radius: 7px;
+  font-weight: bold;
+  background-color: rgb(230, 195, 0);
+  .dnld_btns{
+    display: flex;
+    justify-content: space-between;
+    button{
+        background-color: black;
+        border: white 2px solid;
+        color: white;
+        border-radius: 4px;
+        padding:8px 6px;
+      }
+  }
+  .close{
+    float: right;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 10px;
+    padding:0 4px;
+    cursor: pointer;
+  }
+  canvas{
+    margin:10px auto;
+    width: 100%;
+  }
+}
+.get_cert{
+  cursor: pointer;
+  margin:0 3px;
+}
+
+.alert_sq{
+ margin-top: 7px;
+}
+
+.sticky_rela{
+  position: sticky;
+  z-index: 4;
+  padding: 10px 0 ;
+  width:100%;
+  background-color: #FFC000;
+  top: 0;
+}
+
+.submitted{
+  position: fixed;
+  z-index: 50;
+  background-color: rgb(223, 223, 223);
+  width: 70%;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  top: 35%;
+  left: 17%;
+  justify-content: center;
+  align-items: center;
+}
+
+// obo alert
+.obo-alert{
+  color: red;
+  display: block;
+  position: fixed;
+  z-index: 80;
+  background-color: rgb(223, 223, 223);
+  width: 70%;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  top: 140%;
+  left: 17%;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+.q-all-alert{
+  
+  color: red;
+  display: block;
+  position: fixed;
+  z-index: 20;
+  background-color: white;
+  width: 70%;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  top: 140%;
+  left: 17%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+// back drop
+.timer_backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+  background-color:black;
+  z-index: 2;
+  opacity: 50%;
+}
+.modal_bg1{
+  position: fixed;
+  // top: 19%;
+
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+  background-color:black;
+  z-index: 0;
+  opacity: 0%;
+}
+.modal-bg-close{
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+}
+.ava_icon{
+  background-color: #d5d3d3;
+  height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: 11px 15px ;
+}
+.clock_icon_bg{
+  background-color:#d5d3d3;
+  height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: 11px 13px;
+}
+.ad_s{
+  width: 100%;
+}
+.tooltip{
+  position: absolute;
+  top: -10px;
+  left: 14%;
+  visibility: hidden;
+  padding: 6px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.tooltip-container{
+position: relative;
+display: flex;
+justify-content: flex-start;
+}
+// sass --watch scss/styles2.scss css/style2.css
